@@ -8,4 +8,17 @@ print_r($cantantes[2]);
 
 //pista count()
 
+for ($i=0; $i < count($cantantes); $i++) {
+    echo "<li>$cantantes[$i]</li>";
+}
+
+echo "</ul>";
+
+//foreach
+echo "<ul>";
+foreach ($cantantes as $cantante) {
+
+}
+echo "</ul>";
+
 
