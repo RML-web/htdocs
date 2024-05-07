@@ -4,35 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas de multiplicar</title>
+    <style>
+        table{
+            border: 1px black solid
+        }
+        th, td {
+   width: 150px;
+   text-align: left;
+
+   border: 1px solid #000;
+}
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-            
-    <?php
-
-/* 
- Ejercicio 6. Mostrar una tabla de HTML con las tablas de multiplicar del 1 al 10.
- */
-
-
-       
-         for ($j=1; $j<= 10; $j++) {
-            echo "<td>";
-            for ($i=1; $i<=10; $i++) {
-            
-                $multiplica=$j*$i; 
-                echo $j. "x" .$i. "=" .$multiplica. "<br>"; 
-            }
-            echo "</td>";
-         
+ <!-- Ejercicio 6. Mostrar una tabla de HTML con las tablas de multiplicar del 1 al 10. -->
+ <table>
+    <tr>
+    <?php 
+  
+     for($i= 1;$i <= 10; $i++){
+        echo "<th>Tabla del $i</th>";
+     }
+ echo "</tr><tr>";
+    for($i= 1;$i <= 10; $i++){
+        echo "<td>";
+        for($j= 1;$j <= 10; $j++){
+            echo "$i"."x"."$j=".$i*$j."<br>";
         }
-
-    
-     
+     echo "</td>" ;
+    }
     ?>
     </tr>
-    </table>
+ </table>
 </body>
 </html>
