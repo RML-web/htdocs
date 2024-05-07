@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectores CSS</title>
+    <style>
+      * {
+        color: red;
+      }
+      /* Selectores de elementos*/
+      body {
+        background-color: #333;
+      }
+      snoopy {
+        color: chartreuse;
+      }
+
+      /* . es para classes */
+      .primary-header {
+        color: blue;
+      }
+      /* # es para los Id*/
+      #welcome {
+        background-color: #f4f4f4;
+      }
+
+      /* , Selectores multiples */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        border-right-style: dotted;
+      }
+      #about {
+        padding: 10px;
+        margin: 20px;
+      }
+
+      /* Selectores anidados */
+      #welcome p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome" class="primary-header">
+      <h2 class="primary-header">Bienenidos a CSS</h2>
+      <snoopy> Hola </snoopy>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In eum, vitae
+        voluptates eius fugiat, enim iste, qui reprehenderit sit eaque deleniti
+        nam nisi? Assumenda, nemo illo? Harum qui magni dolorum.
+      </p>
+    </div>
+    <div id="about">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+        incidunt reprehenderit atque? Deleniti ad voluptas repellendus impedit
+        quae cum, dolor ex commodi fugiat magnam inventore, est laboriosam optio
+        consequatur maxime!
+      </p>
+    </div>
+  </body>
+</html>

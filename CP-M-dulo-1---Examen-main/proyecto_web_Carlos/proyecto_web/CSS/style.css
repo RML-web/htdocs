@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  background-color: azure;
+}
+header {
+  color: #fff;
+  background: url(../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg) no-repeat
+    center center/cover;
+  height: 70vh;
+
+}
+
+#top-menu h1 {
+  margin-left: 30px;
+  font-size: 2.4rem;
+}
+
+#top-menu a {
+  color: #fff;
+}
+#top-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#top-menu .top-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+#top-menu .top-menu-container ul {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+}
+#top-menu .top-menu-container ul a {
+  padding: 10px;
+  display: block;
+  margin-right: 30px;
+}
+#top-menu .top-menu-container ul a:hover {
+  color: azure;
+}
+#top-menu .top-menu-container ul a.active {
+  color:azure;
+}
+#showcase {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+  
+}
+#showcase h2 {
+  font-size: 48px;
+  line-height: 50px;
+}
+#showcase p {
+  font-size: 24px;
+  /* line-height: 6rem; */
+}
+
+.btn {
+  background-color:azure;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 1.2rem;
+}
+#showcase a {
+  color: #1f1616;
+}
+
+.main {
+  background-color: #fff;
+  max-width: 960px;
+  margin: auto;
+}
+
+.modulo {
+  padding: 20px;
+  text-align: center;
+  
+}
+.modulo h2 {
+  font-size: 2rem;
+}
+.modulo p {
+  margin-top: 1rem;
+}
+#modulo.pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.pic1 {
+  display: flex;
+  flex-direction: row;
+}
+#box-images {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+}
+.box-im {
+  /* height: 200px; */
+  width: 33%;
+  background-color: blue;
+  border-radius: 14px;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+  height: 80%;
+}
+
+.text-box {
+  padding: 5px 15px;
+  line-height: 1.3rem;
+}
+
+#icons {
+  background-color: antiquewhite;
+  padding: 40px;
+}
+#icons h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#icons i {
+  font-size: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  #box-images {
+  flex-direction: column;
+  padding: 15px;
+}
+  }

@@ -1,0 +1,7 @@
+@import url(otroestilo.css);/* regla de arroba */
+h2{
+    color: blueviolet;/*propiedades */
+}/*regla css*/
+h3 {
+    color: blue;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enlaces como botones</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #45a13f;
+      }
+      a:active {
+        color: blueviolet;
+      }
+      a:hover {
+        color: orange;
+      }
+      /* a:visited {
+        color: red;
+      } */
+      .btn {
+        background: #4c6ca0;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #554a4a;
+        color: #4c6ca0;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <a href="#" class="btn">Soy un link</a>
+    <br />
+    <br />
+    <button class="btn">Soy un Button</button>
+  </body>
+</html>

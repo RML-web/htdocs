@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h4>Ejercicio 9</h4>
+  <body>
+    <script>
+      const frase = prompt("Escribe una frase");
+      let fraseLargo = frase.length;
+      let vocales = "aeiou";
+      let count = 0;
+
+      for (let i = 0; i < fraseLargo; i++) {
+        // if (vocales.indexOf(frase[i]) > -1) {
+
+        //   count++;
+        // }
+        for(let j = 0;j < vocales.length; j++ ){
+            if(frase[i] === vocales[j]){
+              count++
+            }
+        }
+       
+      }
+      alert(count);
+    </script>
+  </body>
+</html>

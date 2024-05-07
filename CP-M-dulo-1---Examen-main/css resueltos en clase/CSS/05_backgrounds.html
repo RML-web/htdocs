@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrounds & borders</title>
+    <style>
+      #box-1 {
+        background-color: blanchedalmond;
+        /* border-width: 6px;
+        border-style: solid;
+        border-color: red; */
+        border: 6px solid red;
+        border-radius: 10px;
+      }
+      #box-2 {
+        background: #333;
+        color: aliceblue;
+        border-top: blue dashed 3px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+      }
+      #box-3 {
+        /* background-image: url("./img/gato.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain; */
+        background: url("./img/gato.jpg") no-repeat center center/cover;
+        height: 300px;
+        width: 600px; 
+        background-color: blanchedalmond;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        corrupti ut, amet nesciunt voluptas assumenda, distinctio aspernatur
+        error consequatur eos voluptatem a deleniti quidem tenetur, veritatis
+        natus repellat id similique.
+      </p>
+    </div>
+    <div id="box-2">
+      <h3>Box 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        corrupti ut, amet nesciunt voluptas assumenda, distinctio aspernatur
+        error consequatur eos voluptatem a deleniti quidem tenetur, veritatis
+        natus repellat id similique.
+      </p>
+    </div>
+    <div id="box-3">
+      <h3>Box 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        corrupti ut, amet nesciunt voluptas assumenda, distinctio aspernatur
+        error consequatur eos voluptatem a deleniti quidem tenetur, veritatis
+        natus repellat id similique.
+      </p>
+    </div>
+  </body>
+</html>

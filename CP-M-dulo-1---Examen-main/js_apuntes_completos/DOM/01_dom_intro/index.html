@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Into al DOM</h1>
+    <p>El DOM es Document object Model</p>
+    <h2>Lista de la compra</h2>
+    <ul>
+      <li>Patatas</li>
+      <li>Huevos</li>
+      <li>Manzanas</li>
+    </ul>
+    <a href="https://google.es">Ir a Google</a>
+    <a href="https://facebook.com">Ir a Facebook</a>
+    <a href="https://instagram">Ir a Instagram</a>
+    <script>
+      //El Objeto Global es window
+      console.log(window);
+
+      //El objeto document es hijo de window
+      console.dir(window.document);
+
+      //ver el body
+      console.dir(window.document.body);
+
+      //podemos directamente document
+      console.dir(
+        (document.body.children[0].innerHTML = "Titulo cambiado desde JS")
+      );
+    </script>
+    <script>
+    //Obtener los links de una página
+    function getlinks() {
+      // convertir enlaces a Array
+      const enlaces = Array.from(document.links);
+       for (let i = 0; i < enlaces.lenght; i++) {
+          const enlace = enlaces[i];
+          console.log((enlace.href = "miruta.html"));
+       }
+       enlaces.forEach((link) => console.log(link.href));
+       enlaces.miPropiedad = "Soy una nueva propiedad";
+       enlaces.saludar = function () {
+        alert("Soy un método personalizado!!")
+       };
+       enlaces.saludar();
+       enlaces.miForEach = Function (callback) {
+        for (let i = 0; i < enlaces.lenght.lenght; i++) {
+            const elemento = enlaces [i];
+            callback(elemento);
+
+        }
+
+       }
+       console.log(enlaces);
+      }
+  </script>
+  </body>
+</html>

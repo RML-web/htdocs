@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  MI VERSION
+      let random = Math.random();
+      random = random * 100 + 1;
+      random = Math.trunc(random);
+      console.log(random);
+
+      let contador = 0;
+      let num1;
+      do {
+        num1 = prompt(
+          "Adivina un número que va del 1 al 100 con 5 intentos como mucho " +
+            contador
+        );
+        contador++;
+
+        if (random == num1) {
+          alert("has acertado");
+        } else if (random < num1) {
+          alert("Baja. El número es menor");
+        } else if (random > num1) {
+          alert("Sube la cantidad. Mi número es mayor");
+        }
+      } while (random != num1 && contador < 5);
+
+      alert ("Has acabado") */
+
+      const secret = Math.floor(Math.random() * 100) + 1;
+      console.log(secret);
+
+      const numIntentos = 5;
+      let intentos = 0;
+      let respuesta = "";
+
+      do {
+        //TODO validar el numero que sea correcto
+        /*do  {
+            respuesta = parseInt(prompt("Escribe tu úmero entre 1 y 100. Intento").trim());
+
+            if (isNaN (respuesta)) {
+              alert ("Escribe un nº válido")
+            } else if (respuesta < 1 || respuesta > 100) {
+              alert ("El número debe estar entre 1 y 100")
+            }
+
+      
+          } while (isNaN (respuesta) || respuesta < 1 || respuesta > 100);*/
+
+        //Validación con BREAK
+        while (true) {
+          respuesta = parseInt(prompt("Escribe tu número entre 1 y 100: " + intentos).trim());
+          if (!isNaN(respuesta) && respuesta > 1 && respuesta < 100) {
+            break;
+          } else {
+            alert("Ecribe un número válido");
+          }
+        }
+
+    
+
+        //Pasar el número de entrada a number
+        intentos++;
+
+        respuesta = Number.parseInt(respuesta);
+
+        //Lógica de ayuda al usuario
+
+        if (respuesta > secret) {
+          alert("Te has pasado");
+        }
+
+        if (respuesta < secret) {
+          alert("No has llegado");
+        }
+      } while (respuesta !== secret && intentos < numIntentos);
+
+      console.log("Intentos: + " + intentos);
+
+      if (intentos < numIntentos) {
+        document.write("has ganado?");
+      } else {
+        document.write("Nno te quedan intentos");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h4>Ejercicio 9</h4>
+  <body>
+    <script>
+      const frase = prompt("Escribe una frase");
+
+      let numVocales = 0
+      const vocales = "aeiou";
+
+      for (let i = 0; i < frase.length; i++) {
+        let letra = frase[i];
+        if (vocales.includes(letra)) {
+          document.write (" vocales " + numVocales);
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

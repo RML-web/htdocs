@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        .container {
+            max-widht: 500px;
+            background-color: blanchedalmond;
+            position: relative;
+            z-index: 0;
+        }
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid gray;
+            background-color: blueviolet;
+            color: azure;
+            z-index: 3;
+
+        }
+        #box-5 {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: red;
+            z-index: 4;
+        }
+            
+        #box-5:hover {
+            background-color: green;
+            z-index: 10;
+        }
+        #box-8 {
+        
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>position: static, relative, absolute, fixed, sticky</p>
+    <p>top, right, left, bottom</p>
+    <div class="container">
+      <div id="box-1" class="box">1</div>
+      <div id="box-2" class="box">2</div>
+      <div id="box-3" class="box">3</div>
+      <div id="box-4" class="box">4</div>
+      <div id="box-5" class="box">5</div>
+      <div id="box-6" class="box">6</div>
+      <div id="box-7" class="box">7</div>
+      <div id="box-8" class="box">8</div>
+      <div id="box-9" class="box">9</div>
+    </div>
+</body>
+</html>

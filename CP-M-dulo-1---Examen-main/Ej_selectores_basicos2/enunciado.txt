@@ -1,0 +1,1 @@
+A partir de la página web que se te proporciona, debes añadir los selectores a las reglas CSS para aplicar los estilos deseados y crear una página web que tenga el mismo aspecto que la siguiente imagen

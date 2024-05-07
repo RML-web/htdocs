@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <style>
+      body {
+        background: #333;
+      }
+      .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        animation-name: anim1;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+      }
+      @keyframes anim1 {
+        from {
+          top: 0;
+        }
+        to {
+          top: 200px;
+          right: 200px;
+          background-color: red;
+          width: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="animate__animated animate__bounce">Hola</h1>
+  </body>
+</html>

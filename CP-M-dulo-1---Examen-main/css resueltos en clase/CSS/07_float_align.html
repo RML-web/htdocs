@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float & align</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: red;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.4em;
+      }
+      .container {
+        background-color: blueviolet;
+        max-width: 600px; /*960px*/
+        margin: 30px auto;
+      }
+      .box {
+        background: burlywood;
+        border: 2px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .box p {
+        text-align: justify; /*opciones de justificado de texto */
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+      #box-3 {
+        float: right;
+        width: 32%;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Box 1</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          similique ducimus consequatur vitae necessitatibus ipsam dicta
+          adipisci sit accusamus placeat, velit repellat ab? Recusandae, ratione
+          ex quas molestiae nobis in?
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Box 2</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          similique ducimus consequatur vitae necessitatibus ipsam dicta
+          adipisci sit accusamus placeat, velit repellat ab? Recusandae, ratione
+          ex quas molestiae nobis in?
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Box 3</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          similique ducimus consequatur vitae necessitatibus ipsam dicta
+          adipisci sit accusamus placeat, velit repellat ab? Recusandae, ratione
+          ex quas molestiae nobis in?
+        </p>
+      </div>
+      <div class="clear"></div>
+      <div id="box-4" class="box">
+        <h3>Box 4</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          similique ducimus consequatur vitae necessitatibus ipsam dicta
+          adipisci sit accusamus placeat, velit repellat ab? Recusandae, ratione
+          ex quas molestiae nobis in?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

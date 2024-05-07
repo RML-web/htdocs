@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <style>
+        /*selectores de elementos */
+        body {
+            background-color: blueviolet;
+        }
+        p {
+            color: violet;
+        }
+        /*# para seleccionar por id */
+        #welcome {
+            background-color: aqua;
+        }
+        /* Selector multiple */
+        #welcome, #about {
+            border: 1px solid black
+            padding; 10px;
+            margin-bottom: 10px;
+        }
+        /* . para seleccionar a una clase */
+        .green-heading¨{
+            color: green;
+        }
+
+        .blue-text {
+            color: blue; 
+        }
+
+        /* Elementos anidados */
+        #welcome p { 
+            font-size:20 px;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="green-heading">Bienvenidos</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta aliquam commodi
+             necessitatibus alias assumenda eveniet tempora aspernatur similique corrupti.</p>
+    </div>
+    <div id="about">
+        <h2>Sobre nosotros</h2>
+        p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta aliquam commodi
+             necessitatibus alias assumenda eveniet tempora aspernatur similique corrupti.</p>
+    </div>
+</body>
+</html>

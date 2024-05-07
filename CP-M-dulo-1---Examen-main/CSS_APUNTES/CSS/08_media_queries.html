@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        body {
+
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              background-color: grey;
+              color: white;
+              text-align: center;
+              padding-top: 100px;
+
+        }
+
+        div {
+            display: none;
+        }
+   @media only screen and (max-width: 500px) {
+        body { 
+            background: red;
+        }      
+         #smartphone {
+            display: block;
+         }
+   }
+
+   /* Tablets */
+
+   @media(min-width:501px) and (max-width: 768px) {
+        body  { 
+            background: blue;
+        }
+        #tablet {
+
+            display: block;
+        }
+
+   }
+
+   @media(min-width: 769px) and (max-width: 1200px) {
+         body  {
+
+         }
+          /* Pantalla grande */
+    @media(min-width: 1201px)     {
+        body {
+            background: black;
+        }
+    }
+    #pantalla-grande {
+        display: block;
+    }
+
+   }
+   /*landscape */
+   
+
+    </style>
+</head>
+<body>
+    
+    <div id="pantalla-grande"><h1>Pantallas grandes</h1></div>
+    <div id="pantalla-normal"><h1>Pantallas verticales</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smatphone"><h1>Smartphone</h1></div>
+    <div id="phorizontal"><h1>Horizontal</h1></div>
+
+</body>
+</html>

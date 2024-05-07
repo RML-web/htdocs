@@ -1,0 +1,25 @@
+:root {
+  --container-max: 600px;
+  /* --box-bg-color: #333;
+        --box-txt-color: #fff;
+        --box-1-width: 1;
+        --box-2-width: 2; */
+  /* --header-bg-color: #333;
+        --header-txt-color: #fff;
+        --header-txt-align: center; */
+}
+header {
+  --header-bg-color: #333;
+  --header-txt-color: #fff;
+  --header-txt-align: center;
+}
+.box {
+  --box-bg-color: rgb(3, 255, 3);
+  --box-txt-color: #fff;
+  --box-1-width: 1;
+  --box-2-width: 3;
+  --box-shadow-h-offset: 10px;
+  --box-shadow-v-offset: 5px;
+  --box-shadow-blur: 5px;
+  --box-shadow-color: #ccc;
+}

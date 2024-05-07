@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before | after</title>
+    <style>
+      .is-required::after {
+        content: "*";
+        color: red;
+        padding-left: 2px;
+      }
+      /* p::first-letter{
+        font-size: larger;
+        color: red;
+      } */
+      ul {
+        list-style: none;
+      }
+      li::before {
+        /* en css para insertar un caracter con su código debemos usar el valor unicode y escapar con \ */
+        content: "-- 🤖 \1f435 -- ";
+      }
+      body{
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        background-color: #333;
+      }
+      header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+      h1{
+        font-size: 6rem;
+        margin: 1rem;
+      }
+      header::before{
+        content: '';
+        background: url('./img/water.jpg')
+        no-repeat center center/cover;/*https://source.unsplash.com/1600x900/?nautre,water'*/
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- <form>
+      <label class="is-required" for="nombre">Nombre</label>
+      <input type="text" id="nombre" />
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore
+      accusamus pariatur blanditiis ab, adipisci natus delectus porro velit
+      fugiat consequuntur exercitationem sunt aperiam mollitia veniam sequi quas
+      harum molestiae.
+    </p>
+    <p>Robot</p> -->
+
+    <header>
+      <h1>Hello world</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor tempore
+        quos placeat aspernatur nemo.
+      </p>
+    </header>
+    
+    <section>
+      <h3>Lorem ,ipsum dolor.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        deleniti rerum delectus commodi repellendus dolorum nobis minima
+        suscipit tenetur totam adipisci sapiente consequatur quo perspiciatis
+        nisi ipsa id laboriosam quam!
+      </p>
+    </section>
+  </body>
+</html>

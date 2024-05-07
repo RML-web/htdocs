@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      @import url(./css/utilities.css);
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: bisque;
+        line-height: 1.4;
+      }
+      .container {
+        display: flex;
+        margin: auto;
+        max-width: var(--container-max);
+        background: white;
+      }
+      header {
+        /* --header-bg-color: green; */
+        background-color: var(--header-bg-color);
+        color: var(--header-txt-color);
+        text-align: var(--header-txt-align);
+      }
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: var(--box-bg-color);
+        box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset)
+          var(--box-shadow-blur) var(--box-shadow-color);
+      }
+      .box-1 {
+        flex: var(--box-1-width);
+      }
+      .box-2 {
+        flex: var(--box-2-width);
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>CSS Variables</h1></header>
+    <div class="container">
+      <div class="box box-1">
+        <h2>Hello world</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          repellendus facere labore repellat veritatis quos possimus suscipit
+          delectus a et. Quasi quidem adipisci hic obcaecati voluptas eligendi,
+          placeat ex! Expedita?
+        </p>
+      </div>
+      <div class="box box-2">
+        <h2>Hello world</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          repellendus facere labore repellat veritatis quos possimus suscipit
+          delectus a et. Quasi quidem adipisci hic obcaecati voluptas eligendi,
+          placeat ex! Expedita?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
