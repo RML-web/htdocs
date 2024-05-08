@@ -1,6 +1,6 @@
 # Hi there 👋
 
-##   💻 I’m currently learning web design
+##   💻 I’m currently learning web design. I live in Spain 🇪🇦
 
 ##   📊 Data bases 
 
