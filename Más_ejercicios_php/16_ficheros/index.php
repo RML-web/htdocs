@@ -16,3 +16,5 @@ echo  '<p>'. $contenido . '</p>';
 $contenido = fgets($archivo);
 
 echo $contenido;
+
+fclose($archivo);
