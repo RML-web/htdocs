@@ -34,10 +34,19 @@
     <?php
     function Filter($data)
     {
+        $data = trim($data);
+        $data = stripcslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
-    if (isset($_POST['sumbit'])) {
+    
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+
         var_dump($_POST);
-    }
+        $nombre = filter($_POST['nombre']);
+        
+}
     ?>
     <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div>
@@ -101,5 +110,4 @@
 
     </form>
 </body>
-
 </html>
