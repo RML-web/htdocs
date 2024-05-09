@@ -45,6 +45,11 @@
 
         var_dump($_POST);
         $nombre = filter($_POST['nombre']);
+        $password = filter($_POST['password']);
+        $estudios = filter($_POST['estudios']);
+        $nacionalidad = filter($_POST['nacionalidad']);
+        $_POST["idiomas"];
+        
         
 }
     ?>
