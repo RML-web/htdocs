@@ -17,4 +17,7 @@ $contenido = fgets($archivo);
 
 echo $contenido;
 
+fwrite($archivo, "********Soy un texto añadido desde php *****");
+fwrite($archivo, date("d-m-y"). "********Soy un texto añadido desde php *****");
+
 fclose($archivo);
