@@ -75,7 +75,7 @@
             <fieldset>
                 <legend for="nacionalidad">Nacionalidad</legend>
                 <div>
-                    <input type="radio" name="nacionalidad" id="es" value="es">
+                    <input type="radio" name="nacionalidad" id="es" value="es" checked>
                     <label for="es"> Española</label>
                 </div>
                 <div>
