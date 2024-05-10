@@ -1,42 +1,30 @@
+<?php
 
-<!DOCTYPE html>
-<html lang="es">
+/* 
+ Crear un array con el contenido de la tabla:
+ ACCION   AVENTURA   DEPORTES
+ GTA      ASSASINS    FIFA 19
+ COD      CRASH       PES 19
+ PUGB     Prince of   MOTO GP 19
+          persia
+ 
+Cada fila debe ir en un fichero separado(includes).
+ */
+$tabla = array(
+    "ACCION" => array("GTA", "Call of Duty", "PUGB"),
+    "AVENTURA" => array("Assasins Creed", "Chrash", "Prince of persia"),
+    "DEPORTES" => array("Fifa 2021", "Pes 19", "Moto GP")
+);
+$tabla['ACCION'][0];
+$categorias = array_keys($tabla);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+var_export($categorias);
 
-<body>
-    <table border="1">
+?>
 
-
-        <?php
-        $tabla = array(
-            "ACCION" => ["GTA", "COD", "PUGB"],
-            "AVENTURA" => ["ASSASINS", "CRASH", "PRINCE OF PERSIA"],
-            "DEPORTES" => ["FIFA 19", "PES 19", "MOTO GP 19"]
-
-        );
-
-        $categorias = array_keys($tabla);
-
-        ?>
-        <TR>
-            <?php foreach ($categorias as $categoria) : ?>
-                <th><?= $categoria ?></th>
-            <?php endforeach ?>
-        </TR>
-        <?php include './/firs-row.php' ?>
-        <?php include './second-row.php' ?>
-        <?php include './third-row.php' ?>
-
-
-    </table>
-</body>
-
-</html>
-<!-- <?php if (true) : ?>
-            <td>Solo se muestra si el if es cierto</td>
-            <?php endif ?> -->
+<table border="1">
+    <?php include_once 'inc/table_header.php' ?>
+    <?php require_once 'inc/table_first_row.php' ?>
+    <?php include_once 'inc/table_second_row.php' ?>
+    <?php include_once 'inc/table_third_row.php' ?>
+</table>
