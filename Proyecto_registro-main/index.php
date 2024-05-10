@@ -9,8 +9,8 @@
 .button1,  .button2{
     background-color: pink;
   color: white;
-  height: 20%;
-  width: 20%;
+  height: 80px;
+  width: 200px;
 
   text-align: center;
   border
@@ -18,22 +18,27 @@
   font-size: 16px;
   border: violet 20px solid;
   margin: auto;
- display: flex;
- justify-content: flex-end;
+ 
  text-align: center;
 
 
 }
-.button1 {
-    margin-top: 20%;
-}
-.button2 {
-    margin-botom: 0;
-}
+
 body {
     max-widht: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items:center;
+    background: #333;
 
 
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
 }
 
     </style>
